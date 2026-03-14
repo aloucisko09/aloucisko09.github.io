@@ -1,0 +1,400 @@
+body{
+  background: linear-gradient(210deg, #000000 0%, #000000 38%, #8B0000 90%, #cc0020 100%);
+  background-attachment: fixed;
+  min-height: 100vh; 
+}
+
+html { scroll-behavior: smooth; 
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #8B0000;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.entete{
+padding:20px 60px;
+height: 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:20px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+font-family: orbitron;
+position: absolute;
+top: -57px;
+margin-left: -10px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+nav a:hover {
+  color: rgb(31, 99, 200);
+}
+
+.logo{
+font-size:32px;
+font-weight:900;
+color:white;
+letter-spacing:2px;
+font-family: orbitron;
+margin-top: 37px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu{
+margin-left: 75%;
+display:flex;
+gap: 28px;
+margin-top: 48px;
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+transform: translateY(0);
+opacity: 1;
+}
+
+.menu li{
+position:relative;
+}
+
+.menu li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right,#8B6B4D,#f4c542);
+    transition: 0.3s ease;
+}
+
+.menu li:hover .submenu{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+.menu li:hover .submenu{
+visibility:visible;
+opacity:1;
+transform:translateY(0);
+}
+
+.menu ul{
+display:flex;
+list-style:none;
+gap: 40px;
+}
+
+.menu a:hover{
+background:#c94b63;
+color:#e6ff00;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+padding:15px 25px;
+display:block;
+position:relative;
+transition:0.3s;
+font-size:16px;
+font-weight:600;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.menu a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:3px;
+background:linear-gradient(to right,#ff0000,#ffd000);
+transition:width 0.3s ease;
+}
+
+.menu a:hover::after{
+opacity:1;
+}
+
+.submenu{
+position:absolute;
+top:100%;
+left:0;
+background:transparent;
+list-style:none ;
+visibility:hidden;
+opacity:0;
+transform:translateY(-10px);
+transition:0.3s;
+display: flex;
+flex-direction: row;
+padding:5px 0;
+border-radius:6px;
+z-index: 999;
+}
+
+.submenu li{
+padding: 2px;
+}
+
+.submenu a:hover{
+background:#ffcc00;
+color:black;
+}
+
+.img-red{
+    width: 37%;
+    height: 20%;
+     mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(239, 63, 63, 0.95) 75%, black 45%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, rgba(239, 63, 63, 0.95) 75%, transparent 100%);
+    mask-composite: intersect;
+  
+    -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 15%, black 75%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    -webkit-mask-composite: source-in; 
+}
+
+h1, h2{
+    font-family: orbitron;
+    color: white;
+}
+
+.tit-r1{
+    position: absolute;
+    margin-left: 45.5%;
+    margin-top: -330px;
+}
+.des1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    margin-left: 45.5%;
+    margin-top: -275px;
+    font-size: 30px;
+
+}
+
+.sainz{
+    width: 37%;
+    height: 20%;
+    margin-left: 63%;
+    margin-top: 5%;
+    mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(239, 63, 63, 0.95) 75%, black 45%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, rgba(239, 63, 63, 0.95) 75%, transarent 100%);
+    mask-composite: intersect;
+  
+    -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 15%, black 75%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    -webkit-mask-composite: source-in;
+}
+
+.champ{
+    position: relative;
+    margin-left: 10%;
+    top: -799px;
+}
+
+.des2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    margin-left: 1% ;
+    margin-top: -750px;
+    font-size: 25px;
+}
+
+.points-table {
+  border-collapse: collapse;
+  color: #fff;
+  background: #1a1a1a;
+  font-family: 'Bebas Neue', sans-serif; /* ou votre police actuelle */
+}
+
+.points-table th {
+  text-align: left;
+  padding: 0.9rem 5rem;
+  color: #aaa;
+  font-weight: normal;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #fffefe;
+}
+
+.points-table td {
+  padding: 0.9rem 5rem;
+  border-bottom: 1px solid #2a2a2a;
+
+}
+
+
+.points-table tbody tr:last-child td {
+  border-bottom: none;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+  
+  
+}
+
+tr, th, td{
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    padding: 0.3rem 0.8rem;
+}
+
+table{
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 30px;
+}
+
+.championnat{
+    width: 37%;
+    height: 20%;
+     mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(239, 63, 63, 0.95) 75%, black 45%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, rgba(239, 63, 63, 0.95) 75%, transarent 100%);
+    mask-composite: intersect;
+  
+    -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 15%, black 75%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    -webkit-mask-composite: source-in;
+}
+
+.ham{
+    width: 37%;
+    height: 20%;
+    margin-left: 25.5%;
+    margin-top: -30px;
+     mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(239, 63, 63, 0.95) 75%, black 45%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, rgba(239, 63, 63, 0.95) 75%, transarent 100%);
+    mask-composite: intersect;
+  
+    -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 15%, black 75%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    -webkit-mask-composite: source-in;
+}
+
+.centre-ham{
+    text-align: center;
+}
+
+.desc2{
+     color: white;
+     font-size: 25px;
+     margin-left: 5% ;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     position: absolute;
+     margin-top: -180px;
+}
+
+.aura1{
+    width: 37%;
+    height: 20%;
+    margin-left: 20%;
+    margin-top: 50px;
+     mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(239, 63, 63, 0.95) 75%, black 45%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, rgba(239, 63, 63, 0.95) 75%, transarent 100%);
+    mask-composite: intersect;
+  
+    -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, black 15%, black 75%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    -webkit-mask-composite: source-in;
+}
+
+.renv1{
+    transform: rotate(90deg);
+    font-family: orbitron;
+    font-size: 50px;
+    margin-left: -20px;
+    position: absolute;
+    margin-top: -375px;
+    color: black;
+}
+
+.haut{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -520px;
+    font-size: 70px;
+    color: rgb(219, 18, 18);
+}
+
+.aura2{
+    position: absolute;
+    margin-left: 67%;
+    margin-top: -615px;
+}
+
+.des3{
+    color: white;
+    font-size: 25px;
+    margin-left: 60% ;
+    position: absolute;
+    margin-top: -495px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aura4{
+    color: white;
+    font-size: 25px;
+    margin-left: 60% ;
+    position: absolute;
+    margin-top: -80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+#piedage2 {
+  text-align: center;
+  padding: 16px 0;
+  color: #999999;
+  width: 100%;
+  font-family: orbitron;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 200px;
+  color: #000000;
+}
